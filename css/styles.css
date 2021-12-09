@@ -533,6 +533,9 @@ img {
 .modal-form-comment:focus {
   border-color: var(--accent-color);
 }
+
+.checkbox-input {
+}
 .check-item {
   width: 16px;
   height: 15px;
