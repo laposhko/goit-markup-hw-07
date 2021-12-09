@@ -533,12 +533,20 @@ img {
 .modal-form-comment:focus {
   border-color: var(--accent-color);
 }
+.check-item {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 8px;
+}
 .checkbox-label {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--description-text-color);
   margin: 0 auto;
+  display: flex;
 }
 .checkbox-label-link {
   text-decoration-line: underline;
@@ -669,8 +677,6 @@ img {
 }
 .footer-contacts-icon {
   fill: currentColor;
-}
-.subcribe-block {
 }
 .subcribe {
   font-weight: bold;
