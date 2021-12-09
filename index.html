@@ -51,7 +51,7 @@
                 <button data-modal-open class="hero-button" type="button" >Заказать услугу</button>
             </div>
         </section>
-        <div class="backdrop " data-modal >
+        <div class="backdrop is-hidden" data-modal >
             <div class="modal" >
                 <button type="button" class="modal-close" data-modal-close >
                     <svg class="modal-close-icon">
@@ -92,10 +92,9 @@
                     <label for="comment" class="modal-form-label">Комментарий</label>
                     <textarea class="modal-form-comment" name="user-comment" id="comment" placeholder="Введите текст" ></textarea>
                     
-                    <input type="checkbox" class="checkbox-input visually-hidden" value="agreed" name="agreed"> 
+                    <input type="checkbox" class="checkbox-input visually-hidden" value="agreed" name="agreed" id="agreed"> 
                     <label for="agreed" class="checkbox-label">
-                        <span class="check-item"></span>
-                        Соглашаюсь с рассылкой и принимаю  
+                        Соглашаюсь с рассылкой и принимаю &nbsp
                         <a href="#" class="checkbox-label-link"> Условия договора</a></label>
 
                     <button type="submit" class="modal-submit">Отправить</button>
