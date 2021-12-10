@@ -60,34 +60,35 @@
                 </button>
                 <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
                 <form action="" class="modal-form" autocomplete="off">
-                    <label for="name" class="modal-form-label">Имя</label>
-                    <span class="modal-input-box">
-                        <input 
-                            type="text" 
-                            name="user-name" 
-                            class="modal-form-input" 
-                            id="name">
-                        <svg class="modal-input-icon">
-                            <use href="./images/icons.svg#modal-person"></use>
-                        </svg>
-                    </span>
+                    <div class="modal-item">
+                        <label for="name" class="modal-form-label">Имя</label>
+                        <span class="modal-input-box">
+                            <input type="text" name="user-name" class="modal-form-input" id="name">
+                            <svg class="modal-input-icon">
+                                <use href="./images/icons.svg#modal-person"></use>
+                            </svg>
+                        </span>
+                    </div>
 
-                    <label for="tel" class="modal-form-label">Телефон</label>
-                    <span class="modal-input-box">
-                        <input type="tel" name="user-tel" class="modal-form-input" id="tel">
-                        <svg class="modal-input-icon">
-                            <use href="./images/icons.svg#modal-tel" ></use>
-                        </svg>
-                    </span>
-                    
+                    <div class="modal-item">
+                        <label for="tel" class="modal-form-label">Телефон</label>
+                        <span class="modal-input-box">
+                            <input type="tel" name="user-tel" class="modal-form-input" id="tel">
+                            <svg class="modal-input-icon">
+                                <use href="./images/icons.svg#modal-tel"></use>
+                            </svg>
+                        </span>
+                    </div>
 
-                    <label for="mail" class="modal-form-label">Почта</label>
-                    <span class="modal-input-box">
-                        <input type="email" name="user-email" class="modal-form-input" id="mail">
-                        <svg class="modal-input-icon">
-                            <use href="./images/icons.svg#modal-mail"></use>
-                        </svg>
-                    </span>
+                    <div class="modal-item">
+                        <label for="mail" class="modal-form-label">Почта</label>
+                        <span class="modal-input-box">
+                            <input type="email" name="user-email" class="modal-form-input" id="mail">
+                            <svg class="modal-input-icon">
+                                <use href="./images/icons.svg#modal-mail"></use>
+                            </svg>
+                        </span>
+                    </div>
 
                     <label for="comment" class="modal-form-label">Комментарий</label>
                     <textarea class="modal-form-comment" name="user-comment" id="comment" placeholder="Введите текст" ></textarea>
