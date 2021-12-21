@@ -1,0 +1,88 @@
+.team {
+  background-color: var(--item-backgroung);
+}
+.team-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+  flex-basis: 270px;
+}
+.team-item {
+  min-height: 368px;
+  background-color: var(--color-primary);
+  margin-right: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+// .team-item:last-child {
+//   margin-right: 0;
+// }
+.team-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-top: 30px;
+}
+.team-item-job {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--description-text-color);
+  margin-top: 10px;
+}
+.team-item-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+.team-contact-list {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.team-contacts-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: block;
+  padding: 12px;
+  color: var(--icons-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--color-primary);
+  }
+}
+// .team-contact-list:last-child {
+//   margin-right: 0;
+// }
+// .team-contacts-link:hover,
+// .team-contacts-link:focus {
+//   background-color: var(--accent-color);
+//   color: var(--color-primary);
+// }
+.team-item-contacts-icon {
+  fill: currentColor;
+}

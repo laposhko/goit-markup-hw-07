@@ -1,0 +1,37 @@
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature-item {
+  flex-basis: 270px;
+  text-align: left;
+}
+
+.feature-image-box {
+  width: 270px;
+  height: 120px;
+  background-color: var(--item-backgroung);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+.feature-description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+  color: var(--description-text-color);
+}
