@@ -12,15 +12,10 @@
   @extend %align-list;
 }
 .nav-list__logo {
-  @include font(26px, bold, 1.19, 0.03em);
-  font-family: Raleway;
   color: #000000;
-  list-style-type: none;
   margin-right: 93px;
 }
-.nav-list__pre-logo {
-  color: var(--accent-color);
-}
+
 .nav-list__item {
   @include font(14px, 500, 1.14, 0.02em);
   position: relative;

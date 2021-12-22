@@ -70,6 +70,20 @@
   fill: currentColor;
 }
 
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  font-family: Raleway;
+  list-style-type: none;
+  color: var(--color-primary);
+}
+
+.pre-logo {
+  color: var(--accent-color);
+}
+
 .header {
   background: var(--color-primary);
   padding: 24px 215px;
@@ -77,18 +91,8 @@
 }
 
 .nav-list__logo {
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  font-family: Raleway;
   color: #000000;
-  list-style-type: none;
   margin-right: 93px;
-}
-
-.nav-list__pre-logo {
-  color: var(--accent-color);
 }
 
 .nav-list__item {
@@ -405,18 +409,8 @@
 }
 
 .footer-address__logo {
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  font-family: Raleway;
-  color: var(--color-primary);
   list-style-type: none;
   margin-bottom: 20px;
-}
-
-.footer-address__pre-logo {
-  color: var(--accent-color);
 }
 
 .address-list__item {

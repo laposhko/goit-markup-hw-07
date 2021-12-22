@@ -16,15 +16,10 @@
   margin-right: 70px;
 }
 .footer-address__logo {
-  @include font(26px, bold, 1.19, 0.03em);
-  font-family: Raleway;
-  color: var(--color-primary);
   list-style-type: none;
   margin-bottom: 20px;
 }
-.footer-address__pre-logo {
-  color: var(--accent-color);
-}
+
 .address-list__item {
   margin-bottom: 9px;
   &:last-child {
