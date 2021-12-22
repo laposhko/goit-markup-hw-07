@@ -39,37 +39,3 @@
   color: var(--description-text-color);
   margin-top: 10px;
 }
-
-// ------CONTACTS-------
-
-.team-item-contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-}
-.team-contact-list {
-  margin-right: 10px;
-  &:last-child {
-    margin-right: 0;
-  }
-}
-.team-contacts-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: block;
-  padding: 12px;
-  color: var(--icons-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    color: var(--color-primary);
-  }
-}
-
-.team-item-contacts-icon {
-  fill: currentColor;
-}

@@ -7,31 +7,21 @@
   @extend %align-list;
 }
 
+// -------navigation-------
 .nav-list {
   @extend %align-list;
 }
-.header-contacts-list {
-  display: flex;
-  margin-left: 255px;
-  &:last-child {
-    margin-right: 0;
-  }
-}
-// .header-contacts-list:last-child {
-//   margin-right: 0;
-// }
-
-.header-logo {
+.nav-list__logo {
   @include font(26px, bold, 1.19, 0.03em);
   font-family: Raleway;
   color: #000000;
   list-style-type: none;
   margin-right: 93px;
 }
-.header-pre-logo {
+.nav-list__pre-logo {
   color: var(--accent-color);
 }
-.main-navigator {
+.nav-list__item {
   @include font(14px, 500, 1.14, 0.02em);
   position: relative;
   display: inline-block;
@@ -44,7 +34,7 @@
   }
 }
 
-.current::after {
+.nav-list--current::after {
   content: ' ';
   position: absolute;
   display: block;
@@ -54,12 +44,17 @@
   background: var(--accent-color);
   border-radius: 2px;
 }
-// .main-navigator:hover,
-// .main-navigator:focus {
-//   color: var(--accent-color);
-// }
 
-.header-email {
+// ------contacts------------
+.header-contacts {
+  display: flex;
+  margin-left: 255px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.header-contacts__email {
   @extend %align-list;
   @include font(14px, 500, 1.14, 0.02em);
   color: var(--description-text-color);
@@ -70,7 +65,7 @@
     color: var(--accent-color);
   }
 }
-.header-telephone {
+.header-contacts__telephone {
   @extend %align-list;
   @include font(14px, 500, 1.14, 0.02em);
   color: var(--description-text-color);
@@ -80,17 +75,12 @@
     color: var(--accent-color);
   }
 }
-// .header-email:hover,
-// .header-email:focus,
-// .header-telephone:hover,
-// .header-telephone:focus {
-//   color: var(--accent-color);
-// }
-.envelope-icon {
+
+.header-contacts__envelope-icon {
   fill: currentColor;
   margin-right: 10px;
 }
-.phone-icon {
+.header-contacts__phone-icon {
   fill: currentColor;
   margin-right: 10px;
 }

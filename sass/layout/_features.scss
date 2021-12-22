@@ -3,12 +3,12 @@
   justify-content: space-between;
   align-items: center;
 }
-.feature-item {
+.features-list__item {
   flex-basis: 270px;
   text-align: left;
 }
 
-.feature-image-box {
+.features-list__icon {
   @extend %align-list;
   width: 270px;
   height: 120px;
@@ -18,13 +18,13 @@
   justify-content: center;
 }
 
-.feature-title {
+.features-list__title {
   @include font(14px, bold, 1.1428, 0.03em);
   text-transform: uppercase;
   color: var(--title-text-color);
   margin-bottom: 10px;
 }
-.feature-description {
+.features-list__description {
   @include font(14px, normal, 1.7142, 0.03em);
   color: var(--description-text-color);
 }

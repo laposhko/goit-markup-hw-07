@@ -3,36 +3,36 @@
   background: var(--dark-backgroung);
   padding: 60px 0;
 }
-.footer-main {
+.footer-section {
   display: flex;
   align-items: baseline;
 }
+
+// footer address
 .footer-address {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-right: 70px;
 }
-.footer-logo {
-  @include font(26px, bold, 1.19, 0.03em );
+.footer-address__logo {
+  @include font(26px, bold, 1.19, 0.03em);
   font-family: Raleway;
   color: var(--color-primary);
   list-style-type: none;
   margin-bottom: 20px;
 }
-.footer-pre-logo {
+.footer-address__pre-logo {
   color: var(--accent-color);
 }
-.address-item {
+.address-list__item {
   margin-bottom: 9px;
   &:last-child {
     margin-bottom: 0;
   }
 }
-// .address-item:last-child {
-//   margin-bottom: 0;
-// }
-.exact-address {
+
+.address-list__link {
   @include font(14px, normal, 1.71, 0.03em);
   color: var(--color-primary);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -41,91 +41,70 @@
     color: var(--accent-color);
   }
 }
-.email {
-  @include font(14px, normal, 1.71, 0.03em);
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
+.address-list__opacity {
+  opacity: 0.6;
 }
-.telephone {
-@include font(14px, normal, 1.71, 0.03em);
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-// .exact-address:hover,
-// .exact-address:focus,
-// .email:hover,
-// .email:focus,
-// .telephone:hover,
-// .telephone:focus {
-//   color: var(--accent-color);
-// }
 
-.footer-social-media {
+// ------social media------
+.footer-social {
   margin-right: 93px;
 }
-.footer-title {
+.footer-social__title {
   @include font(14px, bold, 1.142, 0.03em);
   text-transform: uppercase;
   color: var(--color-primary);
   margin-bottom: 20px;
 }
-.footer-contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer-contact-list {
-  margin-right: 10px;
-  &:last-child {
-    margin-right: 0;
-  }
-}
-.footer-contacts-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+// .footer-social__social-list {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .footer-contact-list {
+//   margin-right: 10px;
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
+.social-list--color {
   background: rgba(255, 255, 255, 0.1);
-  display: block;
-  padding: 12px;
   color: var(--color-primary);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-    color: var(--color-primary);
-  }
 }
-// .footer-contact-list:last-child {
-//   margin-right: 0;
-// }
-// .footer-contacts-link:hover,
-// .footer-contacts-link:focus {
-//   background-color: var(--accent-color);
+
+// .footer-contacts-link {
+//   width: 44px;
+//   height: 44px;
+//   border-radius: 50%;
+//   background: rgba(255, 255, 255, 0.1);
+//   display: block;
+//   padding: 12px;
 //   color: var(--color-primary);
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover,
+//   &:focus {
+//     background-color: var(--accent-color);
+//     color: var(--color-primary);
+//   }
 // }
-.footer-contacts-icon {
-  fill: currentColor;
-}
-.subcribe {
+
+// .footer-contacts-icon {
+//   fill: currentColor;
+// }
+
+// -----footer modal form ----
+.footer-modal__title {
   @include font(14px, bold, 16px, 0.03em);
   text-transform: uppercase;
   color: var(--color-primary);
   margin-bottom: 20px;
   display: flex;
 }
-.subcribe-form {
+.footer-form {
   display: flex;
 }
-.footer-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -143,10 +122,8 @@
     border-color: var(--accent-color);
   }
 }
-// .footer-input:focus {
-//   border-color: var(--accent-color);
-// }
-.footer-buton {
+
+.footer-form__button {
   @extend %align-list;
   @include font(16px, bold, 30px, 0.06em);
   width: 200px;
@@ -160,7 +137,7 @@
   border-radius: 4px;
   border: 0;
 }
-.subcribe-icon {
+.footer-form__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;

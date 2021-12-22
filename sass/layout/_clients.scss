@@ -1,4 +1,4 @@
-.clients-title {
+.clients__title {
   @include font(36px, bold, 1.16, 0.03em);
   text-align: center;
   color: var(--title-text-color);
@@ -7,7 +7,7 @@
 .clients-list {
   display: flex;
 }
-.clients-item {
+.clients-list__item {
   box-sizing: border-box;
   width: 170px;
   height: 92px;
@@ -17,11 +17,8 @@
     margin-right: 0;
   }
 }
-// .clients-item:last-child {
-//   margin-right: 0;
-// }
 
-.client-link {
+.clients-list__link {
   @extend %align-list;
   height: 100%;
   width: 100%;
@@ -36,30 +33,27 @@
     color: var(--accent-color);
   }
 }
-// .client-link:hover,
-// .client-link:focus {
-//   border: 1px solid var(--accent-color);
-//   color: var(--accent-color);
-// }
-.client-icon {
+
+.clients-list__icon {
   fill: currentColor;
+  height: 42px;
 }
 
-.first-icon {
-  padding: 7px 32px;
-}
-.second-icon {
-  padding: 4px 33px;
-}
-.third-icon {
-  padding: 9px 31px;
-}
-.fourth-icon {
-  padding: 10px 11px;
-}
-.fifth-icon {
-  padding: 7px 22px;
-}
-.sixth-icon {
-  padding: 8px 6px;
-}
+// .first-icon {
+//   padding: 7px 32px;
+// }
+// .second-icon {
+//   padding: 4px 33px;
+// }
+// .third-icon {
+//   padding: 9px 31px;
+// }
+// .fourth-icon {
+//   padding: 10px 11px;
+// }
+// .fifth-icon {
+//   padding: 7px 22px;
+// }
+// .sixth-icon {
+//   padding: 8px 6px;
+// }
