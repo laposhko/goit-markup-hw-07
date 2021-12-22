@@ -9,21 +9,15 @@
   background-size: cover;
 }
 .hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  @include font(44px, 900, 1.36, 0.06em);
   text-align: center;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-primary);
   margin-bottom: 30px;
 }
 .hero-button {
+  @include font(16px, bold, 1.87, 0.06em);
   background: var(--accent-color);
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
   color: var(--color-primary);
   margin: 0 auto;
   display: block;

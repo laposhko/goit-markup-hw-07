@@ -1,12 +1,9 @@
 .team {
   background-color: var(--item-backgroung);
 }
-.team-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+.team__title {
+  @include font(36px, bold, 1.16, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
@@ -15,7 +12,7 @@
   justify-content: center;
   flex-basis: 270px;
 }
-.team-item {
+.team-list__item {
   min-height: 368px;
   background-color: var(--color-primary);
   margin-right: 30px;
@@ -30,24 +27,21 @@
 // .team-item:last-child {
 //   margin-right: 0;
 // }
-.team-item-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
+.team-list__name {
+  @include font(16px, 500, 1.18, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-top: 30px;
 }
-.team-item-job {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.18;
+.team-list__job {
+  @include font(16px, normal, 1.18, 0.03em);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--description-text-color);
   margin-top: 10px;
 }
+
+// ------CONTACTS-------
+
 .team-item-contacts {
   display: flex;
   justify-content: center;
@@ -75,14 +69,7 @@
     color: var(--color-primary);
   }
 }
-// .team-contact-list:last-child {
-//   margin-right: 0;
-// }
-// .team-contacts-link:hover,
-// .team-contacts-link:focus {
-//   background-color: var(--accent-color);
-//   color: var(--color-primary);
-// }
+
 .team-item-contacts-icon {
   fill: currentColor;
 }

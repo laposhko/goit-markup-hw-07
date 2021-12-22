@@ -2,11 +2,12 @@
   padding-top: 0;
 }
 .activity-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+  @include font(36px, bold, 1.16, 0.03em);
+  // font-weight: bold;
+  // font-size: 36px;
+  // line-height: 1.16;
+  // letter-spacing: 0.03em;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
   margin-bottom: 50px;
 }
@@ -24,15 +25,16 @@
   position: relative;
 }
 .activity-description {
+  @include font(14px, bold, 16px, 0.03em);
   position: absolute;
   bottom: 0;
   width: 100%;
   background: rgba(47, 48, 58, 0.8);
   height: 70px;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  // font-weight: bold;
+  // font-size: 14px;
+  // line-height: 16px;
+  // letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-primary);
   display: flex;

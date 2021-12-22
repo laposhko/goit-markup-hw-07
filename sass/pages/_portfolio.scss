@@ -16,14 +16,10 @@
 //   margin-right: 0;
 // }
 .filter-button {
+  @include font(16px, 500, 1.62, 0.03em);
   font-family: Roboto;
   background: var(--item-backgroung);
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
   border: 0;
   border-radius: 4px;
@@ -130,13 +126,11 @@
 // }
 
 .project-thumb-text {
+  @include font(18px, normal, 1.555, 0.03em);
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 18px;
-  line-height: 1.555;
-  letter-spacing: 0.03em;
   color: var(--color-primary);
   width: 322px;
   height: 168px;
@@ -147,18 +141,12 @@
   padding: 30px 0;
 }
 .project-title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  @include font(18px, bold, 2, 0.06em);
   color: var(--title-text-color);
   text-indent: 24px;
 }
 .project-description {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
+  @include font(16px, normal, 1.87, 0.03em);
   color: var(--description-text-color);
   text-indent: 24px;
 }
