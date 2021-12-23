@@ -8,15 +8,19 @@
 }
 
 // -------navigation-------
-.nav-list {
-  @extend %align-list;
+.header-nav {
+  display: flex;
 }
-.nav-list__logo {
+
+.header-nav__logo {
   color: #000000;
   margin-right: 93px;
 }
+.header-nav__list {
+  @extend %align-list;
+}
 
-.nav-list__item {
+.header-nav__link {
   @include font(14px, 500, 1.14, 0.02em);
   position: relative;
   display: inline-block;
@@ -41,7 +45,7 @@
 }
 
 // ------contacts------------
-.header-contacts {
+.header-contacts__list {
   display: flex;
   margin-left: 255px;
   &:last-child {
